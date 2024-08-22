@@ -5,8 +5,6 @@ import socialStatsRouter from './routes/socialStats';
 import { authMiddleware } from './middleware/authMiddleware'; 
 
 import { PORT } from './config';
-import { Request, Response, NextFunction } from 'express';
-
 
 const app = express();
 

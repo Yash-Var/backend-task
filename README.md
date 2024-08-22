@@ -15,17 +15,24 @@
 {
   "twitterData": [
     {
-      "id": 1,
-      "title": "Test Post",
-      "content": "This is a test post from Twitter."
-    }
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  }
   ],
   "instagramData": [
     {
+    {
+    "albumId": 1,
       "id": 1,
-      "title": "Test Photo",
-      "url": "https://via.placeholder.com/600/92c952"
+
+    "title": "accusamus beatae ad facilis cum similique qui sunt",
+      "url": "https://via.placeholder.com/600/92c952",
+ "thumbnailUrl": "https://via.placeholder.com/150/92c952"
     }
+    
+  }
   ]
 }
 ```
@@ -50,9 +57,10 @@ For Twitter:
 ```json
 [
   {
+    "userId": 1,
     "id": 1,
-    "title": "Test Post",
-    "content": "This is a test post from Twitter."
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
   }
 ]
 ```
@@ -62,10 +70,13 @@ For Instagram:
 ```json
 [
   {
-    "id": 1,
-    "title": "Test Photo",
-    "url": "https://via.placeholder.com/600/92c952"
-  }
+    "albumId": 1,
+      "id": 1,
+
+    "title": "accusamus beatae ad facilis cum similique qui sunt",
+      "url": "https://via.placeholder.com/600/92c952",
+ "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+    }
 ]
 ```
 
