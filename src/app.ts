@@ -17,7 +17,7 @@ const limiter = rateLimit({
 });
 
 app.use(limiter);
-// app.use(authMiddleware);
+app.use(authMiddleware);
 
 
 app.use('/api', socialStatsRouter);
