@@ -1,4 +1,5 @@
 import express from 'express';
+// @ts-ignore
 import rateLimit from 'express-rate-limit';
 import socialStatsRouter from './routes/socialStats';
 import { authMiddleware } from './middleware/authMiddleware'; 

@@ -1,52 +1,6 @@
 
 # Social Media Aggregator
 
-## Getting Started
-
-To get a local copy of this project up and running, follow these simple steps.
-
-### 1. Clone the Repository
-
-First, clone the repository to your local machine:
-
-```bash
-https://github.com/Yash-Var/backend-task/
-```
-
-### 2. Install Dependencies
-
-Navigate into the project directory and install the necessary dependencies:
-
-```bash
-cd your-repo
-npm install
-```
-
-### 3. Build the Project
-
-Build the project to create a production-ready version:
-
-```bash
-npm run build
-```
-
-### 4. Start the Application
-
-Start the application:
-
-```bash
-npm start
-```
-
-By default, the application will run on [http://localhost:3000](http://localhost:3000). You can change this by modifying the configuration.
-
-### 5. Run Tests
-
-To run the test suite and ensure everything is working correctly, use:
-
-```bash
-npm test
-```
 ## API Endpoints
 
 ### 1. Aggregated Social Stats
@@ -61,23 +15,24 @@ npm test
 {
   "twitterData": [
     {
-    "userId": 1,
-    "id": 1,
-    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-  }
+      "id": 1,
+      "title": "Test Post",
+      "content": "This is a test post from Twitter."
+    }
   ],
   "instagramData": [
     {
-    "albumId": 1,
-    "id": 1,
-    "title": "accusamus beatae ad facilis cum similique qui sunt",
-    "url": "https://via.placeholder.com/600/92c952",
-    "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-  }
+      "id": 1,
+      "title": "Test Photo",
+      "url": "https://via.placeholder.com/600/92c952"
+    }
   ]
 }
 ```
+
+**Notes:**
+- Ensure you have a valid API key in the request headers.
+- The response contains combined data from various social media platforms.
 
 ### 2. Platform-Specific Stats
 
@@ -86,40 +41,75 @@ npm test
 **Description:** Returns detailed statistics for a specific social media platform.
 
 **URL Parameters:**
-
-    platform: The platform for which you want to fetch data. Possible values include twitter, instagram, etc.
+- `platform`: The platform for which you want to fetch data. Possible values include `twitter`, `instagram`, etc.
 
 **Response Example:**
 
-## For Twitter:
+For Twitter:
 
 ```json
-
 [
   {
-    "userId": 1,
     "id": 1,
-    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    "title": "Test Post",
+    "content": "This is a test post from Twitter."
   }
 ]
 ```
 
-## For Instagram:
+For Instagram:
 
 ```json
-
 [
   {
-    "albumId": 1,
     "id": 1,
-    "title": "accusamus beatae ad facilis cum similique qui sunt",
-    "url": "https://via.placeholder.com/600/92c952",
-    "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+    "title": "Test Photo",
+    "url": "https://via.placeholder.com/600/92c952"
   }
 ]
 ```
-### Additional Information
 
-- **Configuration**: Configuration files can be found in the `config` directory.
-- **Environment Variables**: Make sure to set up environment variables as required by the application. You can find the required environment variables in the `.env.example` file.
+**Notes:**
+- Replace `:platform` with the desired platform name.
+- Ensure you have a valid API key in the request headers.
+- The response will include detailed stats specific to the chosen platform.
+
+## Setup and Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Build the TypeScript files:
+
+   ```bash
+   npm run build
+   ```
+
+4. Start the server:
+
+   ```bash
+   npm start
+   ```
+
+5. Run tests:
+
+   ```bash
+   npm test
+   ```
+
+## Authentication
+
+This project implements a simple authentication mechanism using an API key. Make sure to include a valid API key in the request headers when making API calls.
+
+--- 
+
+This README section should help others understand how to set up, run, and use your project effectively.
