@@ -20,7 +20,7 @@ router.get('/social-stats', async (req, res, next) => {
 // GET /api/platform/:platform: Return detailed stats for a specific platform
 router.get('/platform/:platform', async (req, res, next) => {
   const { platform } = req.params;
-  
+
   try {
     let data;
     switch (platform.toLowerCase()) {
